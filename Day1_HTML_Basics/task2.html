@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        h1,.topbar,.outside
-        {
+       * {
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         h1{
             text-align: center;
-           
+           background-color: rgb(151, 209, 236);
+           padding-top: 20px;
+           padding-bottom: 20px;
+           margin-bottom: 0px;
         }
         .topbar{
             background-color: black;
@@ -15,41 +17,61 @@
             text-align: center;
             padding-top: 5px;
             padding-bottom: 5px;
+            margin-top: 0px;
+        }
+        h2{
+            text-align: center;
         }
        .tag{
         text-align: center;
         font-size: 12px;
-        padding-top: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: rgb(151, 209, 236);
        }
-       .outside{
+       .contact-box{
         border: 1px solid black;
-        text-align: center;
-
+        width:380px;
+        height:450px;
+        margin-left: 450px;
+       }
+       .contacts{
+        padding-left: 25px;
+       }
+       .text-box,.submit{
+        width: 320px;
+        height: 25px;
+        margin-bottom: 10px;
+        margin-top: 9px;
+       }
+       .text-box2
+       {
+        width: 320px;
+        height:50px;
+       }
+       .submit{
+        color:white;
+        background-color: black;
+        padding-top: 10px;
+        padding-bottom: 30px;
        }
     </style>
 <body>
     <h1>Contact Form Exercise</h1>
     <p class="topbar">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contant</p>
-    <div class="outside">
+    <div class="contact-box">
         <h2> Contact Us</h2>
-        <lable for="name">Name:</lable>
-        <br>
-        <input type="text" id="name" name="name" >
-        <br>
-        <lable for="email">Email:</lable>
-        <br>
-        <input type="text" id="email" name="email" >
-        <br>
-        <lable for="Phone">Phone:</lable>
-        <br>
-        <input type="text" id="phone" name="phone" >
-        <br>
-        <lable for="message">Message:</lable>
-        <br>
-        <input type="text" id="message" name="message" >
-        <br>
-        <br>
-        <button>submit</button>
+        <div class="contacts">
+       <lable class="title1" for="name">Name:</p>
+        <input class="text-box" type="text" id="name" name="name" >
+        <lable class="title1" for="email">Email:</lable>
+        <input class="text-box" type="text" id="email" name="email" >
+        <lable class="title1" for="Phone">Phone:</lable>
+        <input class="text-box" type="text" id="phone" name="phone" >
+        <lable class="title1" for="message">Message:</lable>
+        <input class="text-box2" type="text" id="message" name="message" >
+        <button class="submit">submit</button>
+    </div>
     </div>
     <p class="tag">&copy Training Website</p>
 </body>
