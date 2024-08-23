@@ -4,25 +4,26 @@
         h1.heading{
         background-color: rgb(221, 215, 215);
         padding-bottom:20px ;
+        padding-top: 20px;
             text-align: center;
             width: auto;
             height: auto;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin-bottom: 0px;
+            font-size: 40px;
         }
         p.topbar{
             background-color: black;
             color: white;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-             padding-top:5px ;           
-             padding-bottom:5px ;  
+             padding-top:10px ;           
+             padding-bottom:10px ;  
              text-align: center;   
              margin-top: 0px;      
         }
         h2.sub1{
             padding-left: 100px;
             font-size: 30px;
-            padding-top: 50px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
         }
         ol.data1{
@@ -43,12 +44,12 @@
         }
         .t1{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding-left: 150px;
+            padding-left: 100px;
             padding-bottom: 0px;
             margin:0px;
         }
         .data3{
-            padding-left: 150px;
+            padding-left: 100px;
             padding-top: 0px;
             padding-bottom: 0px;
             margin: 0;
@@ -56,13 +57,15 @@
         }
         .t2{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding-left: 150px;
+            padding-left: 100px;
             padding-bottom: 0px;
             margin: 0;
         }
         .inner{
             display: flex;
             justify-content: space-around ;
+            font-size: 20px;
+            padding-top: 30px;
             
         }
       table,tr,th,td{
@@ -72,19 +75,21 @@
              padding:3px;
              font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
       }
-         .inner2{
-            padding-top:65px ;
-         }
          .tag{
-            padding-top: 40px ;
             font-size: 14px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
          text-align: center;
+         background-color:rgb(221, 215, 215) ;
+         padding-top: 5px;
+         padding-bottom: 5px;
+         }
+         span{
+            padding-left: 30px;
          }
     </style>
 <body>
     <h1 class="heading">HTML Lists and Tables</h1>
-    <p class="topbar">Home About Contact</p>
+    <p class="topbar"><span>Home</span><span>About</span><span>Contact</span></p>
     <div class="inner">
     <div class="inner1">
     <h2 class="sub1">Order List:</h1>
@@ -102,7 +107,7 @@
         <h2 class="sub3">Description List:</h2>
         <p class="t1"><b>Term 1</b></p>
         <p class="data3">Definition</p>
-        <p class="t2"><b>term 2</b></p>
+        <p class="t2"><b>Term 2</b></p>
         <p class="data3">Definition</p>
     </div>
     <div class="inner2">
