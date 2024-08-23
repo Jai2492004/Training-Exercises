@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                h1{
+                background-color: rgb(220, 236, 236);
+                text-align: center;
+                margin-bottom: 0px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 40px;
+            }
+            }
+             .topbar{
+            background-color: black;
+            color:white;
+            text-align: center;
+            margin-top: 0px;
+            font-size:15px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+        .bar{
+                padding-left: 40px;
+                font-size: 20px;
+        }
+        .link{
+                text-decoration: none;
+                color: white;
+            }
+            .universal{
+                background-color: rgb(183, 231, 227);
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            .data{
+                font-size: 19px;
+            }
+            .type-selector,.id-selector,.attribute-selector,.descendant-selector,.child-selector,.adjacent,.general-sibiling{
+                background-color: rgb(183, 231, 227);
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top:20px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            .id-selector{
+                color:red;
+               
+            }
+            .class-selector{
+                background-color: rgb(235, 220, 14);
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top:20px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            .input1{
+                box-sizing:border-box;
+                width: 100%;
+            }
+            .heading{
+                font-size:30px;
+            }
+            .tag{
+                background-color:  rgb(183, 231, 227);
+                text-align: center;
+            }
+        </style>
+       
+    </head>
+<body>
+    <h1>CSS Selectors Practice</h1>
+    <p class="topbar">
+        <span class="bar"><a class="link" href="Home">Home</a></span>
+        <span class="bar"><a class="link" href="About">About</a></span>
+        <span class="bar"><a class="link" href="Services">Services</a></span>
+        <span class="bar"><a class="link" href="Contact">Contact</a></span>
+     </p>
+     <div class="universal">
+        <h2 class="selector">Universal Selector Example</h2>
+        <p class="data">This paragraph is styled using universal selector (*) which applies to all elements.</p>
+     </div>
+     <div class="type-selector">
+        <h2 class="selector">Type Selector Example</h2>
+        <h3>Headings and Paragraphs</h3>
+        <p class="data">This is an example of paragraph styled by the type selector.</p>
+     </div>
+     <div class="class-selector">
+        <h2 class="selector">Class Selector Example</h2>
+        <p class="data">This section is styled using a class sector named highlight.</p>
+     </div>
+     <div class="id-selector">
+        <h2 class="selector">ID Selector Example</h2>
+        <p class="data">This section is styled using an Id selector named #unique.</p>
+     </div>
+     <div class="attribute-selector">
+        <h2 class="selector">Attribute Selector Example</h2>
+        <p class="data">Type your name:</p>
+        <input class="input1" type="text" placeholder="Your Name">
+     </div>
+     <div class="descendant-selector">
+        <h2 class="selector">Descendant Selector Example</h2>
+        <p class="data">This paragraph is inside a div and styled by a descendant selector (div p).</p>
+     </div>
+     <div class="child-selector">
+        <h2 class="selector">Child Selector Example</h2>
+        <ul class="data">
+            <li>First child item styled using child (ul>li).</li>
+            <li>Another child item in the list.</li>
+        </ul>
+     </div>
+     <div class="adjacent">
+        <h2 class="selector">Adjacent Sibling Selector Example</h2>
+        <h3 class="heading">This is a heading</h3>
+        <p class="data">This paragraph is styled as an adjacent sibling to the above heading (h2 + p)</p>
+     </div>
+     <div class="general-sibiling">
+        <h2 class="selector">General Sibiling Selector Example</h2>
+        <h3 class="heading">Another heading</h3>
+        <p class="data">This paragraph is styled as a general sibling to the above heading (h2 - p).
+        <p class="data">Another sibling paragraph styled the same way.</p>
+        </p>
+     </div>
+     <p class="tag">&copy 2024 CSS Selectors Practice</p>
+</body>
+</html>
