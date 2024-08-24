@@ -11,54 +11,61 @@
             text-align:center;
             padding-top: 20px;
             padding-bottom: 20px;
+            font-size: 50px;
         }
-        .empty{
-            border: solid;
-            width:400px;
-            height: 250px;
-            margin-left: 400px;
-            margin-top: 90px;
-        }
-        .object{
-            background-color: green;
-            width: 160px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-right: 2px;
-            padding-left: 2px;
-            margin-top: 80px;
-            margin-left: 90px;
-            margin-right: 90px;
-            text-align: center;
-           
-            color:white;
-        }
-        .object:active{
-            transform:translateY(100px);
+        .empty1{
             position: relative;
+            border: solid;
+            width: 350px;
+            height:220px;
+            top:60px;
+            left:500px;
+
         }
         .object1{
-           
-            background-color: blue;
-            padding-top: 2px;
-            padding-bottom: 2px;
-            padding-right: 2px;
-            padding-left: 2px;
-            margin-left: 20px ;
-            margin-top: 20px;
-            margin-right: 100px;
+            position: absolute;
+            background-color: green;
+            color:white;
+            width:150px;
+            height:40px;
+            padding-left: 20px;
+            padding-top:20px ;
+            left:70px;
+            top:50px;
+        }
+        .empty{
+            position: relative;
+        }
+        .object2{
+            background-color: rgb(12, 168, 168);
+            position: relative;
+            width:200px;
+            height:40px;
+            color:white;
+            padding-left: 30px;
+            padding-top: 20px;
+            top:100px;
+            left:280px;
+
+        }
+        .footer-content{
+            position: relative;
+            background-color:rgb(213, 241, 235) ;
+            top:140px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Draggable Exercises</h1>
-    <div class="empty1">
     <div class="empty">
-        <p class="object">Drag Me Within Box</p>
+    <div class="empty1">
+        <p class="object1">Drag Me Within Box</p>
     </div>
-    <div class="object1">
-        <p class="object1">Drag Me Within Window</p>
+    <div class="object">
+        <p class="object2">Drag Me Within Window</p>
     </div>
     </div>
-</body>
-</html>
+    <p class="footer-content">&copy 2024 Draggable Divs Exercise</p>
