@@ -3,6 +3,9 @@
 <head>
     <title>Document</title>
     <style>
+      *{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
         h1{
                 background-color: rgb(220, 236, 236);
                 text-align: center;
@@ -29,7 +32,61 @@
                 padding-left: 40px;
                 font-size: 20px;
         }
-    </style>
+        .block li{
+            display: block;
+            text-align: center;
+            background-color: green;
+            margin-top: 10px;
+            width:900px;
+            height:40px;
+            margin-left: 150px;
+            padding-top: 10px;
+            color:white;
+        }
+
+        .block ul{
+            margin-bottom:50px;
+            margin-top: 50px;
+        }
+        .inline li{
+            display:inline;
+            background-color: rgb(61, 185, 185);
+            margin-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color:white;
+        }
+        .inline ul{
+            margin-left: 350px;
+            margin-bottom: 50px;
+        }
+        .inline_block li{
+            color:white;
+            display:inline-block;
+            background-color:orange;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+
+        }
+        .inline_block ul{
+            margin-left: 400px;
+        }
+        .tag{
+            
+            text-align: center;
+            position: fixed;
+            bottom:0;
+            width:100%;
+            background-color:rgb(220, 236, 236) ;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        </style>
     
 </head>
 <body>
@@ -40,5 +97,27 @@
         <span class="bar"><a class="link" href="Services">Services</a></span>
         <span class="bar"><a class="link" href="Contact">Contact</a></span>
      </p>
+     <div class="block">
+        <ul>
+            <li>Block Element 1 (display: block)</li>
+            <li>Block Element 1 (display: block)</li>
+            <li>Block Element 1 (display: block)</li>
+        </ul>
+     </div>
+     <div class="inline">
+        <ul>
+            <li>Inline Element 1</li>
+            <li>Inline Element 2</li>
+            <li>Inline Element 3</li>
+        </ul>
+     </div>
+     <div class="inline_block">
+        <ul>
+            <li>Inline-Block 1</li>
+            <li>Inline-Block 2</li>
+            <li>Inline-Block 3</li>
+        </ul>
+     </div>
+     <p class="tag">&copy 2024 Display Property Examples</p>
 </body>
 </html>
