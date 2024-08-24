@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+        }
+        div{
+           display: grid;
+           grid-template-columns: 70vh 128vh;
+           grid-template-rows: 12vh 80vh 5vh;
+           grid-template-areas:
+           "h h"
+           "s1 main"
+           "f f";
+           gap:10px;
+        }
+        .grid{
+            display:grid;
+            justify-content: center;
+            grid-area:h;
+            padding:20px;
+            font-size: 40px;
+            color:white;
+            background-color: green;
+        }
+        .sidebar{
+            grid-area:s1;
+            padding:20px;
+            font-size: 20px;
+            background-color: rgb(233, 227, 227);
+        }
+        .content{
+            grid-area:main;
+            padding:20px;
+            font-size: 20px;
+            background-color: rgb(207, 194, 194);
+        }
+        .footer-content{
+            display:grid;
+            justify-content: center;
+            grid-area:f;
+            background-color: green;
+            color:white;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="grid">Grid Layout Example</p>
+        <p class="sidebar">Sidebar</p>
+        <p class="content">Main Content Area</p>
+        <p class ="footer-content">Footer: &copy 2024 Grid Layout Example</p>
+    </div>
+</body>
+</html>
