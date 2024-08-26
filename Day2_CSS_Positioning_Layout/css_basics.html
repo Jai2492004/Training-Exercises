@@ -92,7 +92,23 @@
             .Pseudo-classes,.classpseudo-Elements{
                 font-size: 31px;
             }
-            .end{
+            .box1:hover{
+                background-color: aqua;
+            }
+            .box2:active{
+                background-color: brown;
+
+            }
+            .box3:hover{
+                background-color:aqua ;
+            }
+
+            p1::before{
+                content: "Start: ";
+                color:rgb(1, 141, 1);
+            }
+            p1::after{
+                content: " :END";
                 color:rgb(1, 141, 1);
             }
             .symbol{
@@ -136,7 +152,7 @@
         <p class="item1">Item 1 (hover, active, etc)</p>
         <p class="item2">Item 2</p>
         <h2 class="classpseudo-Elements">Pseudo-Elements Example:</h2>
-        <p><strong class="end">Start:</strong> before and after applied to this paragraph <strong class="end">:End</strong></p>
+        <p1 class="end">before and :: after applied to this paragraph</p1>
     </div>
     <p class="symbol">&copy CSS Basics Review</p>
 </body>
