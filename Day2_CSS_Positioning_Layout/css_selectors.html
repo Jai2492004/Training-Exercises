@@ -43,7 +43,7 @@
             .data{
                 font-size: 19px;
             }
-            .type-selector,.id-selector,.attribute-selector,.descendant-selector,.child-selector,.adjacent,.general-sibiling{
+            .type-selector,#id-selector,.attribute-selector,.descendant-selector,.child-selector,.adjacent,.general-sibiling{
                 background-color: rgb(183, 231, 227);
                 margin-left: 20px;
                 margin-right: 20px;
@@ -52,10 +52,16 @@
                 padding-bottom: 10px;
                 padding-top: 10px;
             }
-            
-            .id-selector{
+            p1{
+                color:orange;
+            }
+            #id-selector{
                 color:red;
                
+            }
+            .attribute-selector input[type="text"]
+            {
+               background-color: yellow;
             }
             .class-selector{
                 background-color: rgb(235, 220, 14);
@@ -65,6 +71,20 @@
                 padding-left: 20px;
                 padding-bottom: 10px;
                 padding-top: 10px;
+            }
+            .descendant-selector h2{
+                font-size: 25px;
+            }
+            .child-selector ul>li
+            {
+                list-style-type: none; 
+            }
+            .adjacent h3+p{
+                margin-top: 0px;
+                color:red;
+            }
+            .general-sibiling h2~p{
+                background-color: yellow;
             }
             .input1{
                 width: 98%;
@@ -94,13 +114,13 @@
      <div class="type-selector">
         <h2 class="selector">Type Selector Example</h2>
         <h3>Headings and Paragraphs</h3>
-        <p class="data">This is an example of paragraph styled by the type selector.</p>
+        <p1 class="data">This is an example of paragraph styled by the type selector.</p1>
      </div>
      <div class="class-selector">
         <h2 class="selector">Class Selector Example</h2>
         <p class="data">This section is styled using a class sector named highlight.</p>
      </div>
-     <div class="id-selector">
+     <div id="id-selector">
         <h2 class="selector">ID Selector Example</h2>
         <p class="data">This section is styled using an Id selector named #unique.</p>
      </div>
