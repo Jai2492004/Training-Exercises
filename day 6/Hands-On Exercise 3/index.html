@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="sub-container">
+    <h2>Student Grades Manager</h2>
+    <p class="text" >Student Name:</p>
+    <input type="text1" id="input-box1" placeholder="Enter student name:">
+    <p class="text" >Garde:</p>
+    <input type="number" id="input-box2" placeholder="Enter student name:">
+    <button id="add-student" onclick="add()">Add Student</button>
+    <button id="display-grades" onclick="display()">Display Grades</button>
+    <p id="grade-list"><strong>Grades List:</strong></p>
+</div>
+    <div id="student-list"><ol id="list"></ol></div>
+    <button id="calculate" onclick="calculate()">Calculate Average Grade</button>
+    <p id="average"><strong>Average Grade:</strong></p>
+</div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
