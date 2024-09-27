@@ -1,0 +1,15 @@
+<div id = "container">
+    <div id = "subcontainer">
+        <h2>Weather API</h2>
+        <div id = "search">
+        <input type = "text" placeholder = "Enter the city name" [(ngModel)]="cityname">
+         <button id="find" (click)="get(cityname)">Search</button>
+       </div>
+        <p id="error">{{notfound}}</p>
+        <div id="city"><p>City Name:</p> <p>{{city}}</p></div>
+        <div id="city"><p>Temprature:</p><p>{{temprature}}</p></div>
+        <div id="city"><p>Humidity:</p> <p>{{humidity}}</p></div>
+        <div id="city"><p>weather Icon:</p><p><img *ngIf="icon" [src]="icon"></p></div>
+
+    </div>
+</div>

@@ -1,0 +1,116 @@
+#container{
+    display:flex;
+    width:100%;
+    min-height:630px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#subcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:1px solid;
+    padding:10px;
+   width:40%;
+}
+
+#inputbox{
+    display:flex;
+}
+
+
+
+
+#inputbox input{
+    width:88%;
+    height:30px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+#inputbox button{
+    height:36px;
+    width: 60px;
+    background-color: #222;
+    color:white;
+    border:1px solid;
+}
+
+#inputbox button:hover{
+    background-color: #5a5858;
+}
+ 
+
+#error{
+    color:red;
+}
+
+
+
+#task{
+    width:100%;
+    margin-left: 0px;
+}
+#task, ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 0px;
+    font-size: 20px;
+    
+
+}
+#task, li{
+    display:flex;
+   justify-content: space-between;
+  
+
+}
+
+#para{
+    word-break: break-all;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+}
+
+
+#edit{
+    background-color: #222;
+    color:white;
+    border:1px solid;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    
+}
+#del{
+    background-color: #222;
+    color:white;
+    border:1px solid;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+   
+} 
+
+#button1{
+    display:flex;
+    align-items: center;
+    gap:2px;
+}
+
+.task-description{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:480px)
+{
+    #subcontainer{
+        width:100%;
+    }
+}
